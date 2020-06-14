@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context="com.example.adeelsultan.phcproject.SignupAsPatient">
+
+    <RelativeLayout
+        android:id="@+id/rellaymain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rellay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/patientsignupdoctorbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="I'm a Doctor"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_marginLeft="25dp"
+                android:textAllCaps="false"
+                />
+            <Button
+                android:id="@+id/iampatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="I'm a Patient"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/lightwhite"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rellay1">
+
+            <LinearLayout
+                android:id="@+id/linlay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="User Name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/pat_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linlay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linlay1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Patient's Email"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/pat_emailaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linlay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linlay2"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Password"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/pat_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:inputType="numberPassword"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linlay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linlay3"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Confirm Password"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/pat_confirmpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:inputType="numberPassword"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linlay5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linlay4"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Phone Number"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/pat_phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linlay6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linlay5"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Enter Your Address"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/pat_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:inputType="textLongMessage"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linlay7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linlay6"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Choose Image"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp"/>
+
+                <Button
+                    android:id="@+id/pat_imagebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click here"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_bg"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linlay8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linlay7"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Gender"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15dp"/>
+            <RadioGroup
+                android:id="@+id/gender_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Male"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Female"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </RadioGroup>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/linlay8"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/linlay7"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:fontFamily="sans-serif-light"-->
+                    <!--android:text="Gender"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:textSize="15dp"/>-->
+                <!--<RadioGroup-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/male"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:text="Male"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="20dp"/>-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/female"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:text="Female"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="20dp"/>-->
+                <!--</RadioGroup>-->
+            <!--</LinearLayout>-->
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rellay3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/rellay2">
+
+            <Button
+                android:id="@+id/patientsignupregisterbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg"
+                android:text="Register"
+                android:backgroundTint="@color/lightwhite"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingRight="90dp"
+                android:paddingLeft="90dp"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rellay3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rellay5"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="-5dp"
+            android:layout_below="@+id/rellay4">
+
+            <Button
+                android:id="@+id/patientsignuploginbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/lightwhite"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="90dp"
+                android:paddingRight="90dp"
+                android:text="Login here"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
